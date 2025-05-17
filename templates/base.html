@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Quiz App</title>
+</head>
+<body>
+    <h1>Flask Quiz App</h1>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('about') }}">About</a> |
+        <a href="{{ url_for('quiz') }}">Quiz</a> |
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- This is where each page will insert its unique content -->
+    {% block content %}{% endblock %}
+</body>
+</html>
